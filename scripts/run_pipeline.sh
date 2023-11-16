@@ -23,5 +23,6 @@ do
 done
 
 # Finalmente ejecutar MultiQC
-export WD=$(pwd)
-multiqc -o out/multiqc $WD
+ mkdir -p out/multiqc
+ export WD=$(pwd)
+ multiqc -o out/multiqc $WD
